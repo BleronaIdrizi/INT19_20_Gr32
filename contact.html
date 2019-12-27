@@ -1,45 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    
-        <div class="row no-gutters">
-            <div class="col-md-6 no-gutters">
-                <div class="leftside">
-                    <img src="https://www.efi.com/library/efi/images/about/contact_us/company_contact.jpg" alt="logo">
-                </div>
-            </div>
-            <div class="col-md-6 no-gutters">
-                
-                
-                <div class="rightside">
-                    <div class="contact">
-                        <p class="fillform"> Ask us anything by filling the form below..</p>
-                        <form class="forms">
-                            <div class="form-group">
-                                <input type="text" name="firstname" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="lastname" placeholder="Last Name">
-                            </div>
-                                <div class="form-group">
-                                    <input type="text" name="email" placeholder="Email">
-                                </div>
-                            <div class="form-group">
-                                <textarea rows="7" cols="7" name="message" placeholder="Message"></textarea>
-                            </div>
-                            <div class="wrapper"><button type="submit" class="pagebutton" name="contactsubmit">Send Message</button></div>
-                        </form>
-                    </div>
-                </div>
+
+    <div id="panel">Contact Us!</div>
+    <div class="contact_page_banner">
+        <div class="contact_page_banner_image" style="background-image: url('images/contact-us-1908763_640.png')">
+            <div class="contact_page_banner_title">
+                <h1>
+                    Contact Us <br />
+                </h1>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div style="text-align:center">
+
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/w3images/map.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Kosove</option>
+                        <option value="canada">Shqiperi</option>
+                        <option value="usa">Maqedoni</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+   
+        <style>
+            .contact {
+                display: flex;
+            }
+
+            .contact_page_banner {
+                background-color: #fff;
+            }
+
+            .contact_page_banner_title {
+                color: rgb(35, 31, 32);
+                text-transform: uppercase;
+                text-align: center;
+                background-color: rgb(252, 208, 93);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 20px 20px 20px 15px;
+            }
+
+            .contact_page_banner_image {
+                height: 270px;
+                background-size: cover;
+                background-position: top center;
+                position: relative;
+            }
+
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            /* Style the container/contact section */
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+
+            /* Create two columns that float next to eachother */
+            .column {
+                float: left;
+                width: 50%;
+                margin-top: 6px;
+                padding: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+
+                .column,
+                input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+        </style>
 </body>
+
 </html>
-
-
-
