@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+
+
+}
+
+
+.img1 {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.text-block {
+  position: absolute;
+ top: 80px;
+  
+  margin-top: 50px;
+  background-color: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  size:30%;
+}
+.cont {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+}
+
+h4 {
+  text-align: center;
+  color:#ffffff;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+p{
+  font-style: oblique;
+}
+
+a{
+  text-align: center;
+}
