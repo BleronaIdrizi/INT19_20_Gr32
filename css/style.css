@@ -3,6 +3,10 @@ body {
     margin: auto;
 }
 
+.break {
+    height: 0;
+}
+
 .header {
     width: 100%;
 }
@@ -103,4 +107,64 @@ body {
 .hero .hero-container .hero-items img {
     width: 90px;
     height: 60px;
+}
+
+.education-content .education-item img {
+    width: 210px;
+    height: 80px;
+}
+
+.education-content {
+    display: flex;
+    padding: 5px;
+}
+
+.education-content-info .education-content-items {
+    display: flex;
+    padding: 10px;
+}
+
+.education-content-items .education-item {
+    margin: 5px;
+}
+
+.education-content-info .education-description .education-description-items .education-description-item-image img {
+    width: 125px;
+    height: 125px;
+}
+
+.education-description-items {
+    width: 75%;
+    padding: 10px;
+}
+
+.education-description-lists {
+    width: 25%;
+    padding: 10px;
+}
+
+.education-description-item {
+    display: flex;
+}
+
+.education-description-item-info {
+    padding: 0px 0px 0px 10px;
+}
+
+.education-description, .education-title {
+    display: flex;
+}
+
+.education-content-videos .education-content-items .education-item img {
+    width: 230px;
+    height: 100px;
+}
+
+.education-content-videos video {
+    width: 230px;
+    height: 230px;
+}
+
+.education-content-videos .education-content-items {
+    padding: 10px;
 }
