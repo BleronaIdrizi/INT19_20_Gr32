@@ -1,0 +1,141 @@
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        width: 50%;
+        float: right;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="contact_form_map_and_info_section">
+
+            <div class="service_page_banner">
+                <div class="service_page_banner_image" style="background-image: url('images/education_img.jpg')">
+                    <div class="service_page_banner_title">
+                        <h1>
+                            services <br/>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_and_info_left_section">
+                <h3 class="text-uppercase">More Info</h3>
+                <div class="kontakt_img"> 
+                    <img src="images/education_img.jpg" width="100%">
+                </div>
+                <div class="kontakt_info blue"> 
+                    <img src="images/address.png"> Prishtine, Kosovo</div>
+                    <div class="kontakt_info blue "> <img src="images/tel.png"> 123 - 12345 - 1</div>
+                    <div class="kontakt_info blue"> <img src="images/fax.png"> 1233 - 12345 - 13</div>
+                    <div class="kontakt_info blue"> <a href="mailto:E-Mail: test@test.com" class="remove_a blue">
+                         <img src="images/email.png"> E-Mail: test@test.com</a>
+                        </div>
+                    </div>
+            </div>
+
+    <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: -34.397, lng: 150.644}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+        document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        });
+      }
+
+      function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7dRYqWgcqIrcru18FJ9gVSoXVDFaqoPg&callback=initMap">
+    </script>
+ <style>
+       .service_page_banner
+    {
+        background-color: #fff;
+    }
+    .service_page_banner_title
+    {
+        color: rgb(35, 31, 32);
+        text-transform: uppercase;
+        text-align: center;
+        background-color:rgb(252, 208, 93);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px 20px 20px 15px;
+    }
+    .service_page_banner_image
+    {
+        height: 270px;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+    }
+
+
+    .text-uppercase {
+    text-transform: uppercase;
+}
+.kontakt_img {
+    margin-bottom: 30px;
+}
+.kontakt_info {
+    color: #00182e;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.blue {
+    color: #00182e;
+}
+.image_and_info_left_section
+{
+    width: 35%;
+    float: left;
+}
+
+ </style>
