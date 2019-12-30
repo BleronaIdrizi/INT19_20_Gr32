@@ -1,3 +1,106 @@
 body {
-    
+    max-width: 980px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .header-container {
+    width: 100%;
+    background-color: orange;
+    padding: 0 10px;
+}
+
+.header .header-container .header-container-info {
+    width: 74%;
+    padding-top: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+.header .header-container .header-container-info h1 {
+    margin: 0;
+}
+
+.header .header-container .header-container-info p {
+    margin: 0;
+}
+
+.header .header-container .header-container-search {
+    width: 25%;
+    padding-top: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+.header .header-container .header-container-search form {
+    background-color: slategrey;
+    width: 100%;
+    padding: 8px;
+}
+
+.header .header-container .header-container-search form input {
+    width: 70%;
+    display: inline-block;
+}
+
+.header .header-container .header-container-search form button {
+    width: 25%;
+    display: inline-block;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.nav .nav-container {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+    background: slategray;
+}
+
+.nav .nav-container .nav-item a {
+    text-decoration: none;
+}
+
+.nav .nav-container .nav-item {
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 20px;
+    border-left: solid 1px;
+}
+
+.hero .hero-container {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    border: solid 1px;
+    padding: 0px 10px;
+}
+
+.hero .hero-container .hero-image {
+    margin: 10px 0px 10px 10px;
+}
+
+.hero .hero-container .hero-info {
+    margin: 10px 0px 10px 10px;
+}
+
+.hero .hero-container .hero-image img {
+    width: 480px;
+    height: 280px;
+}
+
+.hero .hero-container .hero-items {
+    display: flex;
+}
+
+.hero .hero-container .hero-items .hero-item {
+    width: -webkit-fill-available;
+}
+
+.hero .hero-container .hero-items img {
+    width: 90px;
+    height: 60px;
 }
