@@ -13,7 +13,7 @@ body {
 
 .header .header-container {
     width: 100%;
-    background-color: orange;
+    background-color: #fcd05d;
     padding: 0 10px;
 }
 
@@ -34,53 +34,103 @@ body {
 
 .header .header-container .header-container-search {
     width: 25%;
-    padding-top: 10px;
     margin: 0;
     display: inline-block;
 }
 
 .header .header-container .header-container-search form {
-    background-color: slategrey;
+    background-color: black;
     width: 100%;
     padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header-container-links {
+    margin: 10px 0px 10px 0px;
+}
+
+.header .header-container-links a {
+    color: black;
+    text-decoration: unset;
+}
+
+.header .header-container-links a.header-container-links-first, a.header-container-links-middle {
+    border-right: solid 1px;
+    padding-right: 5px;
 }
 
 .header .header-container .header-container-search form input {
     width: 70%;
     display: inline-block;
+    background-color: #fcd05d;
+    border-radius: 8px;
+    height: 25px;
 }
 
 .header .header-container .header-container-search form button {
     width: 25%;
-    display: inline-block;
-    border-radius: 3px;
-    outline: 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #525252;
+    color: #fcd05d;
 }
 
 .nav .nav-container {
     display: flex;
     width: 100%;
-    padding: 0 10px;
-    background: slategray;
+    padding: 5px 10px;
+    background: #231f20;
 }
 
 .nav .nav-container .nav-item a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item.first, .nav-item.middle {
+    border-right: solid 1px #666666;
 }
 
 .nav .nav-container .nav-item {
     width: -webkit-fill-available;
     text-align: center;
-    padding: 20px;
-    border-left: solid 1px;
+    padding: 25px;
 }
 
 .hero .hero-container {
     display: flex;
     width: 100%;
     margin-top: 5px;
-    border: solid 1px;
+    border: solid 1px #979797;
     padding: 0px 10px;
+    background-color: #231f20;
+}
+
+.hero .hero-text {
+    width: 100%;
+    margin-top: 5px;
+    border: solid 1px #979797;
+    padding: 0px 10px;
+    background-color: #231f20;
+}
+
+.hero-description p, .hero-text p {
+    color: #979797;
+}
+
+.hero-description h2, .hero-text h2 {
+    color: #e5e5e5;
+}
+
+.hero-full-story a {
+    color: #fcd05d;
+    text-align: right;
+    text-decoration: none;
+}
+
+h4.hero-full-story {
+    text-align: right;
 }
 
 .hero .hero-container .hero-image {
@@ -98,20 +148,29 @@ body {
 
 .hero .hero-container .hero-items {
     display: flex;
+    background-color: black;
+    margin-top: 55px;
 }
 
 .hero .hero-container .hero-items .hero-item {
     width: -webkit-fill-available;
+    border: solid 1px #979797;
+    padding: 5px;
+    text-align: center;
 }
 
 .hero .hero-container .hero-items img {
     width: 90px;
     height: 60px;
+    padding: 5px;
+    border: solid 1px #979797;
 }
 
 .education-content .education-item img {
     width: 210px;
     height: 80px;
+    padding: 5px;
+    border: solid 1px #979797;
 }
 
 .education-content {
@@ -131,15 +190,17 @@ body {
 .education-content-info .education-description .education-description-items .education-description-item-image img {
     width: 125px;
     height: 125px;
+    padding: 5px;
+    border: solid 1px #979797;
 }
 
 .education-description-items {
-    width: 75%;
+    width: 70%;
     padding: 10px;
 }
 
 .education-description-lists {
-    width: 25%;
+    width: 30%;
     padding: 10px;
 }
 
@@ -149,6 +210,20 @@ body {
 
 .education-description-item-info {
     padding: 0px 0px 0px 10px;
+}
+
+.education-description-item a {
+    text-decoration: none;
+    color: #ce4521;
+}
+
+.education-description-item-info h4 {
+    color: #ce4521;
+}
+
+.education-description-lists a {
+    color: #ce4521;
+    text-decoration: none;
 }
 
 .education-description, .education-title {
@@ -167,4 +242,9 @@ body {
 
 .education-content-videos .education-content-items {
     padding: 10px;
+}
+
+img.mySlides {
+    width: 700px;
+    height: 400px;
 }

@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Gallery</title> 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
 
-  </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <p>blerona test</p> 
-        
-        <div class=" row ">
-         
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <div class="header-container-info">
+        <h1>Education Department</h1>
+        <p>Free PSD website template </p>
+      </div>
+      <div class="header-container-search">
+        <form action="#">
+          <input type="text">
+          <button>Search</button>
+        </form>
+        <div class="header-container-links">
+          <a class="header-container-links-first" href="http://">A-Z index</a>
+          <a class="header-container-links-middle" href="http://">Student login</a>
+          <a class="header-container-links-last" href="http://">Staff login</a>
         </div>
       </div>
     </div>
-
-    <div class="container content">
-        <div class="row">
-          
-        </div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <div class="row footer_info">
-          <div class="col-md-6">
-            <h3>Header</h3>
-         
-          </div>
-
-        </div>
+    <div class="nav">
+      <div class="nav-container">
+        <div class="nav-item first"><a href="index.html">HOMEPAGE</a></div>
+        <div class="nav-item middle"><a href="services.html">SERVICE</a></div>
+        <div class="nav-item middle"><a href="contact.html">CONTACT</a></div>
+        <div class="nav-item middle"><a href="about.html">ABOUT US</a></div>
+        <div class="nav-item last"><a href="gallery.html">GALLERY</a></div>
       </div>
     </div>
+  </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <div class="hero">
+    <div class="hero-container">
+      <div class="hero-image-silder">
+
+        <img class="mySlides" src="img/Foto (1).jpg">
+        <img class="mySlides" src="img/Foto (2).jpg">
+        <img class="mySlides" src="img/Foto (3).jpg">
+        <img class="mySlides" src="img/Foto (4).jpg">
+        <img class="mySlides" src="img/Foto (5).jpg">
+        <img class="mySlides" src="img/Foto (6).jpg">
+        <img class="mySlides" src="img/Foto (7).jpg">
+        <img class="mySlides" src="img/Foto (8).jpg">
+        <img class="mySlides" src="img/Foto (9).jpg">
+        <img class="mySlides" src="img/Foto (10).jpg">
+        <img class="mySlides" src="img/Foto (11).jpg">
+        <img class="mySlides" src="img/Foto (12).jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <div class="hero-info">
+        <div class="hero-description">
+          <h2>Gallery Images</h2>
+        </div>
+        <h4 class="hero-full-story"><a href="#">More Images »</a></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content"></div>
+    <div class="footer-content"></div>
+    <div class="footer-connect">
+      <div class="footer-social-media">
+        <div class="footer-social-media-item"></div>
+        <div class="footer-social-media-item"></div>
+        <div class="footer-social-media-item"></div>
+        <div class="footer-social-media-item"></div>
+      </div>
+      <div class="footer-subscribe">
+      </div>
+    </div>
+    <div class="footer-copyright">
+    </div>
+</body>
+
 </html>
+
+<script type="text/javascript" src="js/slider.js"></script>
