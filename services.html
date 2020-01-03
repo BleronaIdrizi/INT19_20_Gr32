@@ -1,206 +1,119 @@
-<!--jQuery Selectors-->
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="css/style.css" />
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-        $(function () {
-
-            $("button").click(function () {
-                $("p1").hide();
-            });
-
-        });
-        $(function () {
-
-            $("#btn2").click(function () {
-                $("p1").show();
-
-            });
-
-        });
-    </script>
-
-    <style>
-        #panel,
-        #flip {
-            padding: 5px;
-            text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-        }
-
-        #panel {
-            padding: 50px;
-            display: none;
-        }
-    </style>
-
-
-</head>
-
-<body>
-
-    <div id="flip">Kliko per te rreshqitur poshte kete panel</div>
-    <div id="panel">Services!</div>
-    <div class="service_page_banner">
-        <div class="service_page_banner_image" style="background-image: url('img/education_img.jpg')">
-            <div class="service_page_banner_title">
-                <h1>
-                    services <br />
-                </h1>
-            </div>
+<div class="service_page_banner">
+    <div class="service_page_banner_image" style="background-image: url('images/education_img.jpg')">
+        <div class="service_page_banner_title">
+            <h1>services <br/></h1>
         </div>
     </div>
-    <div class="services">
-        <div class="service_col">
-            <h2>service 1</h2>
-            <img class="service_img" src="img/education_img.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
 
-
-            </div>
-        </div>
-
-        <div class="service_col">
-            <h2>opportunities</h2>
-            <img class="service_img" src="images/education_img1.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="service_col">
-            <h2>service 3</h2>
-            <img class="service_img" src="images/education_img3.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-            </div>
-        </div>
-        <div class="service_col">
-            <h2>Scholarship</h2>
-            <img class="service_img" src="images/mentor-3513738_640.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+<div class="services mt100">
+    <div class="service_col">
+        <h2>service 1</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
-
-    <div class="services">
-        <div class="service_col">
-            <h2>Library</h2>
-            <img class="service_img" src="images/library-2692432_640.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="service_col">
-            <h2>service 6</h2>
-            <img class="service_img" src="images/skills-3371153_640.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="service_col">
-            <h2>service 7</h2>
-            <img class="service_img" src="images/science-1182713_640.jpg">
-            <div class="service_description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="service_col">
-            <h2>More</h2>
-            <img class="service_img" src="images/question-4612922_640.jpg">
-            <div class="service_description">
-                <p1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p1>
-                <br />
-                <button>hide</button>
-                <button id="btn2">more</button>
-            </div>
+    <div class="service_col">
+        <h2>service 2</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
-    <br />
-    <style>
-        .services {
-            display: flex;
-        }
+    <div class="service_col">
+        <h2>service 3</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+</div>
 
-        .service_col {
-            width: 25%;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+<div class="services mt100 mb100">
+    <div class="service_col">
+        <h2>service 5</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <div class="service_col">
+        <h2>service 6</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <div class="service_col">
+        <h2>service 7</h2>
+        <img class="service_img" src="images/education_img.jpg">
+        <div class="service_description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+</div>
 
-        .service_img {
-            width: 100%;
-            height: 130px;
-            object-fit: cover;
-        }
+<style>
+     html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+     *{
+         box-sizing: border-box;
+    }
+     .services
+    {
+        display: flex;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .service_col
+    {
+        width: 33.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .service_col h2{
+        margin-top: 0px;
+        border-bottom: 1px solid #D7E5E0;
+        padding-bottom: 15px;
+    }
+    .service_img
+    {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .service_page_banner
+    {
+        background-color: #fff;
+    }
+    .service_page_banner_title
+    {
+        color: rgb(35, 31, 32);
+        text-transform: uppercase;
+        text-align: center;
+        background-color:rgb(252, 208, 93);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px 20px 20px 15px;
+    }
+    .service_page_banner_image
+    {
+        height: 370px;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+    }
+    .mt100{
+        margin-top: 100px;
+    }
+    .mb100
+    {
+        margin-bottom: 100px;
+    }
+</style>
 
-        .service_page_banner {
-            background-color: #fff;
-        }
-
-        .service_page_banner_title {
-            color: rgb(35, 31, 32);
-            text-transform: uppercase;
-            text-align: center;
-            background-color: rgb(252, 208, 93);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            padding: 20px 20px 20px 15px;
-        }
-
-        .service_page_banner_image {
-            height: 270px;
-            background-size: cover;
-            background-position: top center;
-            position: relative;
-        }
-    </style>
-    <br />
