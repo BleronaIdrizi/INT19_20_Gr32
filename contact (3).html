@@ -1,0 +1,201 @@
+ <div class="contact_page_banner">
+     <div class="contact_page_banner_image" style="background-image: url('images/education_img.jpg')">
+         <div class="contact_page_banner_title">
+             <h1> Contact us <br /></h1>
+         </div>
+     </div>
+ </div>
+
+ <div class="row">
+     <div class="column more_info">
+         <h2>More Info</h3>
+             <div class="contact_img">
+                 <img src="images/education_img.jpg" width="100%">
+             </div>
+             <div class="contact_info">
+                 <img src="images/address.png"> Prishtine, Kosovo
+             </div>
+             <div class="contact_info"> <img src="images/tel.png"> 123 - 12345 - 1</div>
+             <div class="contact_info"> <img src="images/fax.png"> 1233 - 12345 - 13</div>
+             <div class="contact_info"> <a href="mailto:E-Mail: test@test.com">
+                     <img src="images/email.png"> E-Mail: test@test.com</a>
+             </div>
+
+     </div>
+     <div class="column">
+         <div id="map"></div>
+     </div>
+ </div>
+
+
+ <div class="row">
+     <div class="column_contact_form">
+         <form action="/action_page.php">
+             <label for="fname">First Name</label>
+             <input type="text" id="fname" name="firstname" placeholder="Your name">
+             <label for="lname">Last Name</label>
+             <input type="text" id="lname" name="lastname" placeholder="Your last name">
+             <label for="gender">Select Your Gender</label><br>
+             <input type="radio" name="gender" value="male"> Male<br>
+             <input type="radio" name="gender" value="female"> Female<br>
+             <input type="radio" name="gender" value="other"> Other<br> <br>
+             <label for="language">What Languages Do You Speak</label><br>
+             <table>
+                 <input type="checkbox" name="language1" value="Albanian"> Albanian<br>
+                 <input type="checkbox" name="language2" value="English">English<br>
+                 <input type="checkbox" name="language3" value="German" checked> German<br><br>
+             </table>
+             <label for="country">Country</label>
+
+             <select id="country" name="country">
+                 <option value="australia">Albania</option>
+                 <option value="canada">Kosovo</option>
+             </select>
+             <label for="subject">Subject</label>
+             <textarea id="subject" name="subject" placeholder="Write something" style="height:170px"></textarea>
+             <input type="submit" value="Submit">
+         </form>
+     </div>
+ </div>
+
+
+ <script>
+     function initMap() {
+         var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 8,
+             center: {
+                 lat: 42.6663748,
+                 lng: 21.1237079
+             }
+         });
+     }
+ </script>
+
+ <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7dRYqWgcqIrcru18FJ9gVSoXVDFaqoPg&callback=initMap">
+ </script>
+
+ <style>
+     html,
+     body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+     }
+
+     * {
+         box-sizing: border-box;
+     }
+
+     .contact_page_banner {
+         background-color: #fff;
+     }
+
+     .contact_page_banner_title {
+         color: rgb(35, 31, 32);
+         text-transform: uppercase;
+         text-align: center;
+         background-color: rgb(252, 208, 93);
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         padding: 20px 20px 20px 15px;
+     }
+
+     .contact_page_banner_image {
+         height: 370px;
+         background-size: cover;
+         background-position: top center;
+         position: relative;
+     }
+
+     .more_info h2 {
+         text-transform: uppercase;
+         margin-top: 0px;
+     }
+
+     .column {
+         float: left;
+         width: 50%;
+         height: 300px;
+     }
+
+     .row:after {
+         content: "";
+         display: table;
+         clear: both;
+     }
+
+     .row {
+         padding-right: 100px;
+         padding-left: 100px;
+         padding-top: 100px;
+     }
+
+     .contact_img {
+         margin-bottom: 30px;
+         margin-right: 200px;
+     }
+
+     .contact_img img {
+         height: 200px;
+         object-fit: cover;
+     }
+
+     .contact_info {
+         font-size: 17px;
+         line-height: 22px;
+         margin-bottom: 10px;
+         color: rgb(35, 31, 32);
+     }
+
+     .contact_info a {
+         text-decoration: none;
+         color: rgb(35, 31, 32);
+     }
+
+     #map {
+         height: 370px;
+         width: 100%;
+         float: right;
+     }
+
+     input[type=text],
+     select,
+     textarea {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid #ccc;
+         margin-top: 6px;
+         margin-bottom: 16px;
+         resize: vertical;
+     }
+
+     input[type=submit] {
+         color: rgb(35, 31, 32);
+         text-transform: uppercase;
+         text-align: center;
+         background-color: rgb(252, 208, 93);
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         font-size: 17px;
+         transition: 1s;
+     }
+
+     input[type=submit]:hover {
+         background-color: rgb(35, 31, 32);
+         color: rgb(252, 208, 93);
+     }
+
+     .column_contact_form {
+         width: 100%;
+     }
+
+     .column_contact_form form {
+         margin-top: 100px;
+         margin-bottom: 100px;
+     }
+ </style>
