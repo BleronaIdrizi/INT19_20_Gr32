@@ -1,4 +1,44 @@
- <div class="contact_page_banner">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <div class="header-container-info">
+        <h1>Education Department</h1>
+        <p>Free PSD website template </p>
+      </div>
+      <div class="header-container-search">
+        <form action="#">
+          <input type="text">
+          <button>Search</button>
+        </form>
+        <div class="header-container-links">
+          <a class="header-container-links-first" href="#">A-Z index</a>
+          <a class="header-container-links-middle" href="https://studenti.uni-pr.edu/" target="_blank">Student login</a>
+          <a class="header-container-links-last" href="https://studenti.uni-pr.edu/" target="_blank">Staff login</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="nav-container">
+        <div class="nav-item first"><a href="index.html">HOMEPAGE</a></div>
+        <div class="nav-item middle"><a href="services.html">SERVICE</a></div>
+        <div class="nav-item middle"><a href="contact (3).html">CONTACT</a></div>
+        <div class="nav-item middle"><a href="About_Us.html">ABOUT US</a></div>
+        <div class="nav-item last"><a href="gallery.html">GALLERY</a></div>
+      </div>
+    </div>
+  </div>
+<div class="contact_page_banner">
      <div class="contact_page_banner_image" style="background-image: url('images/education_img.jpg')">
          <div class="contact_page_banner_title">
              <h1> Contact us <br /></h1>
@@ -35,15 +75,19 @@
              <input type="text" id="fname" name="firstname" placeholder="Your name">
              <label for="lname">Last Name</label>
              <input type="text" id="lname" name="lastname" placeholder="Your last name">
-             <label for="gender">Select Your Gender</label><br>
-             <input type="radio" name="gender" value="male"> Male<br>
-             <input type="radio" name="gender" value="female"> Female<br>
-             <input type="radio" name="gender" value="other"> Other<br> <br>
+             <label for="email">Email</label>
+             <input type="text" id="email" name="email" placeholder="Your email">
+             <label for="gender">Select Your University</label><br>
+             <input type="radio" name="University" value="University Of Prishtina"> University Of Prishtina<br>
+             <input type="radio" name="University" value="AAB"> University Of Prizren<br>
+             <input type="radio" name="University" value="UBT"> UBT<br>
+             <input type="radio" name="University" value="AAB"> AAB<br> <br>
              <label for="language">What Languages Do You Speak</label><br>
              <table>
                  <input type="checkbox" name="language1" value="Albanian"> Albanian<br>
                  <input type="checkbox" name="language2" value="English">English<br>
-                 <input type="checkbox" name="language3" value="German" checked> German<br><br>
+                 <input type="checkbox" name="language3" value="German" checked> German<br>
+                 <input type="checkbox" name="language4" value="Others">Others<br><br>
              </table>
              <label for="country">Country</label>
 
@@ -75,11 +119,18 @@
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7dRYqWgcqIrcru18FJ9gVSoXVDFaqoPg&callback=initMap">
  </script>
 
+
+
+
+
+
+
+
  <style>
      html,
      body {
          height: 100%;
-         margin: 0;
+         margin:0;
          padding: 0;
      }
 
@@ -198,4 +249,10 @@
          margin-top: 100px;
          margin-bottom: 100px;
      }
+
+
+
+
+
+
  </style>
