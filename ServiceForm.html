@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+                $("#flip").text("Kliko për ta mbyllur");
+
+            });
+        });
+
+
+
+
+        $(function () {
+
+
+            $("button").click(function () {
+                $("#test").hide();
+            });
+        });
+
+
+        $(function () {
+
+            $("#btn2").click(function () {
+                $("#test").show();
+
+            });
+        });
+    </script>
+</head>
+
+
+<style>
+    #panel,
+    #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+    }
+
+    .service_page_banner_image:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+
+    }
+
+    .button {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="flip">Klikoni këtu nëse dëshironi të njoftoheni më shumë</div>
+    <div id="panel">Disa nga shërbimet tona!</div>
+
+
+    <div class="service_page_banner">
+        <div class="service_page_banner_image" style="background-image: url('images/education_img.jpg')">
+            <div class="service_page_banner_title">
+                <h1>services <br /></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="services mt100">
+        <div class="service_col">
+            <h2>School Services</h2>
+            <img class="service_img" src="images/education_img.jpg">
+            <div class="service_description">
+                <p id="test">Since 1990, <i>Search Associates</i> has connected thousands of outstanding candidates with
+                    hundreds of the best
+                    international schools around the world. We have become the world's premier international school
+                    recruiting agency, having been directly involved in assisting in over
+                    <strong><mark>40,000</mark></strong> primary and secondary
+                    administrators, teachers, and interns to find jobs. We believe that our success as the largest
+                    international school recruitment organization is the result of our long history of hard work and
+                    close
+                    partnership with the schools and candidates we serve.</p>
+                <button id="button">Hide</button>
+                <button id="btn2">Show</button>
+
+            </div>
+        </div>
+        <div class="service_col">
+            <h2>Scholarships </h2>
+            <img class="service_img" src="images/mentor-3513738_640.jpg">
+            <div class="service_description">
+                <p>As a first-generation student, you are likely to be challenged with navigating the college process
+                    without the learning curve that comes from having a college graduate family member to lean on.
+                    Parents
+                    who do not have much first-hand experience or insight on how to maximize your financial aid package
+                    or
+                    the importance of internship opportunities, and networking can be difficult. While figuring out how
+                    to
+                    balance a full course load, a part-time job, and social life are skills you will develop along the
+                    way,
+                    most colleges and quite a few organizations offer scholarships specifically for first-generation
+                    students to help them thrive in higher education.</p>
+
+            </div>
+        </div>
+        <div class="service_col">
+            <h2>Online Tutoring</h2>
+            <img class="service_img" src="images/learn-868815_640.jpg">
+            <div class="service_description">
+                <p><b>Schools organise online tutoring with our tutors for their students due to several reasons.</b>
+                    Whether there has been disruption to a particular subject during the year, too few students signed
+                    up to run a class or you simply want to give your students the best possible chance in their final
+                    exams, our tutors can help. The reasons are as many as there are students! Our online tutoring has
+                    been widely appreciated by
+                    students and schools wanting to ensure everyone reaches their ambitions. <u> you are interested in
+                        arranging online tutoring for your students or would like to know more about this opportunity
+                        please
+                        email us.</u>
+                    LI <abbr title="Lorem Ipsum"></abbr>is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services mt100 mb100">
+        <div class="service_col">
+            <h2>Fast Learning</h2>
+            <img class="service_img" src="images/board-752051_640.jpg">
+            <div class="service_description">
+                <p>
+                    On a Scale of 1 to 10...
+                    How Do You Rate Your Learning Skill?
+                    There's Too Many Skills, Not Enough Time.
+                    To stay ahead of the curve, you've got to keep upgrading your skills.
+
+                    But time is limited.
+
+                    It's simply not practical to learn everything through slow and traditional methods.
+                    Everyone has a capability to learn anything - if they know how to learn the right way.
+                    How effectively you learn is determined by how you look at learning.</p>
+            </div>
+        </div>
+        <div class="service_col">
+            <h2>Laser Focus</h2>
+            <img class="service_img" src="images/target-1506091_640.jpg">
+            <div class="service_description">
+                <p>There will always be too much to do, and never enough time or energy to do them all. Chances are,
+                    staying on top of stress, exhaustion and distractions are daily challenges that you face at the cost
+                    of lost time, health and well being.</p>
+                Laser Focus with Purpose is the system that we've created as a culmination of it all. We've created this
+                course to show you how to become your own master of focus --- and start unlocking the true potential of
+                what your precious time and energy can achieve.
+            </div>
+        </div>
+        <div class="service_col">
+            <h2>Motivation</h2>
+            <img class="service_img" src="images/doit.jpg">
+            <div class="service_description">
+                <p>Nobody is inherently lazy.
+
+                    You're just not motivated. And there's a big difference.
+                    Motivation is a skill you can develop systematically with the right mindset and the right practice.
+                    People lose motivation because they don't spend it properly.
+                    Your motivation shouldn't run out over time. It should grow.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .services {
+            display: flex;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .service_col {
+            width: 33.33%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .service_col h2 {
+            margin-top: 0px;
+            border-bottom: 1px solid #D7E5E0;
+            padding-bottom: 15px;
+        }
+
+        .service_img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .service_page_banner {
+            background-color: #fff;
+        }
+
+        .service_page_banner_title {
+            color: rgb(35, 31, 32);
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgb(252, 208, 93);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px 20px 20px 15px;
+        }
+
+        .service_page_banner_image {
+            height: 370px;
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+        }
+
+        .mt100 {
+            margin-top: 100px;
+        }
+
+        .mb100 {
+            margin-bottom: 100px;
+        }
+    </style>
+</body>
+
+</html>
