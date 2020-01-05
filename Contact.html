@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+</head>
+
+<body>
+    <!--               oooooooooooooooooooooooooooooooo                                 -->
+    <div class="header">
+        <div class="header-container">
+            <div class="header-container-info">
+                <h1>Education Department</h1>
+                <p>Free PSD website template </p>
+            </div>
+            <div class="header-container-search">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </form>
+                <div class="header-container-links">
+                    <a class="header-container-links-first" href="#">A-Z index</a>
+                    <a class="header-container-links-middle" href="login.html" target="_blank">Student login</a>
+                    <a class="header-container-links-last" href="https://studenti.uni-pr.edu/" target="_blank">Staff
+                        login</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-container">
+                <div class="nav-item first"><a href="Homepage.html">HOMEPAGE</a></div>
+                <div class="nav-item middle"><a href="Services.html">SERVICE</a></div>
+                <div class="nav-item middle"><a href="Contact.html">CONTACT</a></div>
+                <div class="nav-item middle"><a href="About_Us.html">ABOUT US</a></div>
+                <div class="nav-item middle"><a href="Gallery.html">GALLERY</a></div>
+                <div class="nav-item last"><a href="JoinUs.html">JOIN US</a></div>
+            </div>
+        </div>
+    </div>
+    <!--                   oooooooooooooooooooooooooooooooo                                 -->
+    <div class="contact_page_banner">
+        <div class="contact_page_banner_image" style="background-image: url('img/education_img.jpg')">
+            <div class="contact_page_banner_title">
+                <h1> Contact us <br /></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="column more_info">
+            <h2>More Info</h3>
+                <div class="contact_img">
+                    <img src="img/education_img.jpg" width="100%">
+                </div>
+                <div class="contact_info"><img src="img/address.png">Prishtine, Kosovo</div>
+                <div class="contact_info"><img src="img/tel.png">1234 - 12345 - 1</div>
+                <div class="contact_info"><img src="img/fax.png">123 - 12345 - 13</div>
+                <div class="contact_info"><a href="mailto:E-Mail: education@gmail.com">
+                        <img src="img/email.png"> E-Mail: education@gmail.com</a>
+                </div>
+
+        </div>
+        <div class="column">
+            <div id="map"></div>
+        </div>
+    </div>
+
+
+    <div class="row content" border>
+        <div class="column_contact_form">
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Please Enter Your Informations:</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email">
+                    <label for="gender">Select Your University</label><br>
+                    <input type="radio" name="University" value="University Of Prishtina"> University Of Prishtina<br>
+                    <input type="radio" name="University" value="AAB"> University Of Prizren<br>
+                    <input type="radio" name="University" value="UBT"> UBT<br>
+                    <input type="radio" name="University" value="AAB"> AAB<br> <br>
+                    <label for="language">What Languages Do You Speak</label><br>
+                    <table>
+                        <input type="checkbox" name="language1" value="Albanian"> Albanian<br>
+                        <input type="checkbox" name="language2" value="English">English<br>
+                        <input type="checkbox" name="language3" value="German" > German<br>
+                        <input type="checkbox" name="language4" value="Others">Others<br><br>
+                    </table>
+                    <label for="country">Country</label>
+
+                    <select id="country" name="country">
+                        <option value="australia">Albania</option>
+                        <option value="canada">Kosovo</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something" style="height:170px"></textarea>
+                    
+                    <div id="main">
+                        <h4>Upload a photo (Not required)</h4>
+                        <form id="imageForm" method="post" enctype="multipart/form-data" action="upload.php">
+                            <input type="file" name="images" id="images" multiple />
+
+                        </form>
+                        <input type="submit" value="Submit">
+                        <div id="response"></div>
+                        <ul id="image-list">
+
+                        </ul>
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: {
+                    lat: 42.6663748,
+                    lng: 21.1237079
+                }
+            });
+        }
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7dRYqWgcqIrcru18FJ9gVSoXVDFaqoPg&callback=initMap">
+        </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="footer">
+        <div class="row footer_first_section">
+
+            <div class="column">
+                <div class="row">
+                    <div class="column">
+                        <h2>Quick Links</h2>
+                        <ul class="footer_pages">
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Copyright Information</a></li>
+                            <li><a href="#">Website Matters</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>How To Find Us</h2>
+                        <ul class="footer_address">
+                            <li>Agim Ramadani Street</li>
+                            <li>Ernest Koliqi Street</li>
+                            <li>Prishtine/Kosovo</li>
+                            <li>10000</li>
+                            <div class="second_part_of_address">
+                                <li>Tel: 038463828</li>
+                                <li>Email: website@gmail.com</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="socila_media_and_newsletter">
+                    <div class="column_connect_with_us">
+                        <h2>Connect With Us</h2>
+                        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                    </div>
+                    <div class="subscribe_footer">
+                        <h2>Subscribe To Our Newsletter</h2>
+                        <div class="subsscribe_form">
+                            <form action="">
+                                <input type="email" id="email" placeholder="Enter Your Email Here" name="email">
+                                <button type="submit">SIGN UP</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="copyright_section_footer">
+                <p>Copyright © 2020 - All Rights Reserved</p>
+                <div class="right_text_copyright">
+                    <p>Template by OS Templates</p>
+                </div>
+            </div>
+        </div>
+    </div>
