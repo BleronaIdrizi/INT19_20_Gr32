@@ -1,0 +1,114 @@
+/* Contact Page CSS */
+
+
+
+.contact_page_banner {
+    background-color: #fff;
+}
+
+.contact_page_banner_title {
+    color: rgb(35, 31, 32);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(252, 208, 93);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 20px 20px 15px;
+}
+
+.contact_page_banner_image {
+    height: 370px;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.more_info h2 {
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.column {
+    /* float: left;
+    width: 50%;
+    height: 300px; */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row.content {
+    padding: 0px 100px 0px 0px;
+}
+
+.contact_img {
+    margin-bottom: 30px;
+    margin-right: 200px;
+}
+
+.contact_img img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact_info {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: rgb(35, 31, 32);
+}
+
+.contact_info a {
+    text-decoration: none;
+    color: rgb(35, 31, 32);
+}
+
+#map {
+    height: 370px;
+    width: 100%;
+    float: right;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: rgb(35, 31, 32);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(252, 208, 93);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(35, 31, 32);
+    color: rgb(252, 208, 93);
+}
+
+.column_contact_form {
+    width: 100%;
+}
+
+.column_contact_form form {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
